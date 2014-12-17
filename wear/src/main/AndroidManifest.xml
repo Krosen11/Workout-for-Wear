@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kevin.workoutforwear" >
+
+    <uses-feature android:name="android.hardware.type.watch" />
+
+    <application
+        android:name="SavedWeight"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.DeviceDefault" >
+        <activity
+            android:name=".HomeScreenWatch"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SetReps"
+            android:label="@string/title_activity_set_reps" >
+        </activity>
+        <activity
+            android:name=".ConfirmExercise"
+            android:label="@string/title_activity_confirm_exercise" >
+        </activity>
+        <activity
+            android:name=".SetWeight"
+            android:label="@string/title_activity_set_weight" >
+        </activity>
+        <activity
+            android:name=".Reps"
+            android:label="@string/title_activity_reps" >
+        </activity>
+        <activity
+            android:name=".FinalView"
+            android:label="@string/title_activity_final_view" >
+        </activity>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>
